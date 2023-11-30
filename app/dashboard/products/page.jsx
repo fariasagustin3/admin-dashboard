@@ -48,8 +48,8 @@ const Products = async ({ searchParams }) => {
               </td>
               <td>{product.desc}</td>
               <td>${product.price}</td>
-              <td>{product.stock}</td>
               <td>{product.createdAt?.toString().slice(4, 16)}</td>
+              <td>{product.stock}</td>
               <td>
                 <div className={styles.buttons}>
                   <Link href={`/dashboard/products/${product._id}`}>
